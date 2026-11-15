@@ -166,19 +166,18 @@ footer {
 
 .hotspot {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 8%; /* Scales dynamically with the map image width */
+    height: 8%; /* Scales dynamically with the map image height */
     border-radius: 50%;
-    /* Make them completely transparent by default so they are invisible */
     border: none;
     background: transparent;
-    transform: translate(-50%, -50%); /* Keeps the center locked to your coordinate percentage */
+    transform: translate(-50%, -50%);
     transition: all 0.3s ease;
 }
 
 .hotspot:hover {
-    transform: translate(-50%, -50%) scale(1.2);
-    background: rgba(255, 255, 255, 0.4); /* Only show the white highlight circle on hover */
+    transform: translate(-50%, -50%) scale(1.15);
+    background: rgba(255, 255, 255, 0.4);
 }
 /*
 .mission-map {
@@ -492,23 +491,15 @@ border-color: #2eaf55;
 }
 
 @media (max-width: 768px) {
+    /* Keeps header padding comfortable without shrinking desktop font sizes */
     header, .scene-header {
-        padding: 40px 20px; /* Reduces top/bottom padding and adds a safe 20px side buffer */
-    }
-
-    .scene-title {
-        font-size: 2.8rem;
-    }
-
-    .subtitle {
-        font-size: 1.1rem;
-        margin-top: 15px;
+        padding: 60px 20px 80px 20px;
     }
 
     .hero-button {
         font-size: 1rem;
-        margin-top: 25px; /* Adds space above the button */
-        margin-bottom: 20px; /* Adds a safety margin at the bottom of the header */
+        margin-top: 25px;
+        margin-bottom: 20px;
         padding: 12px 24px;
     }
 }
