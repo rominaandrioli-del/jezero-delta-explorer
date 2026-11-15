@@ -451,3 +451,24 @@ border-color: #2eaf55;
     background-position: center center;
 }
 
+@media (max-width: 768px) {
+    header, .scene-header {
+        padding: 40px 20px; /* Reduces top/bottom padding and adds a safe 20px side buffer */
+    }
+
+    .scene-title {
+        font-size: 2.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+        margin-top: 15px;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+        margin-top: 25px; /* Adds space above the button */
+        margin-bottom: 20px; /* Adds a safety margin at the bottom of the header */
+        padding: 12px 24px;
+    }
+}
