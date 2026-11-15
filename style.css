@@ -141,6 +141,48 @@ footer {
     padding: 30px;
     color: #aaa;
 }
+
+.map-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission-map {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mission-map img {
+    display: block;
+    width: 100%;
+    height: auto; /* Maintains the image's exact aspect ratio dynamically */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.hotspot {
+    position: absolute;
+    /* Use percentage sizing so the circles shrink and grow with the image */
+    width: 5%; 
+    height: 5%;
+    transform: translate(-50%, -50%); /* Centers the hotspot precisely over your coordinate point */
+    border-radius: 50%;
+    border: 2px dashed rgba(255, 255, 255, 0.4); /* Optional: subtle guide while testing */
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.hotspot:hover {
+    transform: translate(-50%, -50%) scale(1.25);
+    background: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+/*
 .mission-map {
     position: relative;
     display: inline-block;
