@@ -451,17 +451,3 @@ border-color: #2eaf55;
     background-position: center center;
 }
 
-@media (max-width: 768px) {
-
-    .scene-title {
-        font-size: 3rem;
-    }
-
-
-@media (max-width: 768px) {
-
-    .hero-button {
-        font-size: 1.1rem;
-        padding: 16px 30px;
-    }
-
