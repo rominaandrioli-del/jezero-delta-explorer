@@ -490,3 +490,8 @@ border-color: #2eaf55;
     background-position: center center;
 }
 
+@media (max-width: 768px) {
+    .hotspot {
+        display: none;
+    }
+}
