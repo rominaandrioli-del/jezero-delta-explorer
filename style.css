@@ -450,20 +450,13 @@ border-color: #2eaf55;
 
     background-position: center center;
 }
+
 @media (max-width: 768px) {
 
-    header h1 {
+    .scene-title {
         font-size: 3rem;
-        line-height: 1.2;
     }
 
-    header .subtitle {
-        font-size: 1.2rem;
-        line-height: 1.4;
-        padding: 0 15px;
-    }
-
-}
 
 @media (max-width: 768px) {
 
@@ -472,4 +465,3 @@ border-color: #2eaf55;
         padding: 16px 30px;
     }
 
-}
