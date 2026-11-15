@@ -166,19 +166,19 @@ footer {
 
 .hotspot {
     position: absolute;
-    width: 8%; /* Scales dynamically with the map image width */
-    height: 8%; /* Scales dynamically with the map image height */
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    border: none;
+    border: transparent;
     background: transparent;
-    transform: translate(-50%, -50%);
-    transition: all 0.3s ease;
+    transition: all 0.3s;
 }
 
 .hotspot:hover {
-    transform: translate(-50%, -50%) scale(1.15);
-    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.2);
+    background: rgba(255,255,255,0.4);
 }
+
 /*
 .mission-map {
     position: relative;
