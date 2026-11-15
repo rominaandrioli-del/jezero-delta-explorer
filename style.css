@@ -1,0 +1,452 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #0d0d0d;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+header {
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.7)
+        ),
+        url("images/mars-background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+
+    padding: 90px 20px;
+
+    border-bottom: 1px solid #333333;
+}
+
+h1 {
+    margin-bottom: 40px;
+    color: #8bd3ff;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #8bd3ff;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+
+.subtitle {
+    color: #e5e5e5;
+    font-size: 1.5rem;
+    max-width: 1000px;
+    margin: 25px auto 0 auto;
+    line-height: 1.5;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+}
+
+.map-container {
+    text-align: center;
+}
+
+.map-container img {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.6);
+
+    transition: transform 0.6s ease;
+}
+
+.mission-map:hover {
+    transform: scale(1.04);
+}
+
+.mission-map {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    transition: transform 0.6s ease;
+}
+
+.objectives {
+    background: #1d1d1d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.locations {
+    margin-top: 25px;
+}
+
+.locations a {
+    display: block;
+    margin: 10px 0;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.locations a:hover {
+    background: #333;
+}
+
+.button {
+    display: inline-block;
+    background: #d95f38;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+    
+
+.button:hover {
+    background: #f07b52;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #aaa;
+}
+.mission-map {
+    position: relative;
+    display: inline-block;
+    max-width: 1500px;
+}
+
+.mission-map img {
+    display: block;
+    width: 100%;
+}
+
+.hotspot {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: transparent;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.hotspot:hover {
+    transform: scale(1.2);
+    background: rgba(255,255,255,0.4);
+}
+
+/* 1 Octavia */
+
+.hotspot1 {
+    left: 56.15%;
+    top: 66%;
+}
+
+/* 2 Delta Base */
+
+.hotspot2 {
+    left: 57.1%;
+    top: 29.7%;
+}
+
+/* 3 Delta Top */
+
+.hotspot3 {
+    left: 38.25%;
+    top: 37.25%;
+}
+
+/* 4 Enchanted Lake */
+
+.hotspot4 {
+    left: 39.6%;
+    top: 64%;
+}
+
+/* 5 Wildcat Ridge */
+
+.hotspot5 {
+    left: 45.4%;
+    top: 55.25%;
+}
+
+/* 6 Three Forks */
+
+.hotspot6 {
+    left: 47.5%;
+    top: 69.35%;
+}
+
+.hero-button {
+
+    display: inline-block;
+
+    margin-top: 60px;
+
+    padding: 14px 28px;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    color: #d7e8f5;
+
+    border: 1px solid rgba(215,232,245,0.4);
+
+    background: rgba(255,255,255,0.05);
+
+    border-radius: 30px;
+
+    transition: all .3s ease;
+}
+
+.hero-button:hover {
+
+    background: rgba(255,255,255,0.10);
+
+    border-color: #8bd3ff;
+
+    color: white;
+}
+
+.hero-button.milestone {
+color: #2eaf55;
+border: 1px solid rgba(46,175,85,0.6);
+background: rgba(46,175,85,0.08);
+}
+ 
+.hero-button.milestone:hover {
+background: rgba(46,175,85,0.15);
+border-color: #2eaf55;
+}
+
+.hero-button.observation {
+    color: #66b6ff;
+    border: 1px solid rgba(102,182,255,0.6);
+    background: rgba(102,182,255,0.08);
+}
+
+.hero-button.observation:hover {
+    background: rgba(102,182,255,0.15);
+    border-color: #66b6ff;
+}
+
+.hero-button.decision {
+    color: #ffbe28;
+    border: 1px solid rgba(255,190,40,0.6);
+    background: rgba(255,190,40,0.08);
+}
+
+.hero-button.decision:hover {
+    background: rgba(255,190,40,0.15);
+    border-color: #ffbe28;
+}
+
+.legend-item {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.legend-box {
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.legend-milestone {
+    background-color: #2eaf55;
+}
+
+.legend-observation {
+    background-color: #6eb5f7;
+}
+
+.legend-decision {
+    background-color: #fcff3d;
+}
+
+.legend {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.milestone-stop {
+
+    border-left: 6px solid #2eaf55;
+
+    background:
+            rgba(29,29,29,1) 20%
+    
+}
+
+.observation-stop {
+
+    border-left: 6px solid #70adeb;
+
+    background:
+            rgba(29,29,29,1) 20%
+    
+}
+
+.decision-stop {
+
+    border-left: 6px solid #fff23d;
+
+    background:
+    
+        rgba(29,29,29,1) 20%
+
+}
+
+
+.scene-header {
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: center;
+
+    padding: 120px 20px;
+
+    border-bottom: 1px solid #333;
+}
+
+.scene-title {
+
+    font-size: 3.8rem;
+
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+.scene-title.milestone-title {
+    color: #2eaf55;
+}
+
+.scene-title.observation-title {
+    color: #66b6ff;
+}
+
+.scene-title.decision-title {
+    color: #ffbe28;
+}
+
+.button.milestone {
+    color: #2eaf55;
+
+    border: 1px solid rgba(46,175,85,0.6);
+
+    background: rgba(46,175,85,0.08);
+}
+
+.button.milestone:hover {
+    background: rgba(46,175,85,0.15);
+
+    border-color: #2eaf55;
+
+    color: white;
+}
+
+.button.observation {
+    color: #66b6ff;
+
+    border: 1px solid rgba(102,182,255,0.6);
+
+    background: rgba(102,182,255,0.08);
+}
+
+.button.observation:hover {
+    background: rgba(102,182,255,0.15);
+
+    border-color: #66b6ff;
+
+    color: white;
+}
+
+.button.decision {
+    color: #f5e12b;
+
+    border: 1px solid rgba(255,190,40,0.6);
+
+    background: rgba(255,190,40,0.08);
+}
+
+.button.decision:hover {
+    background: rgba(255,190,40,0.15);
+
+    border-color: #ffbe28;
+
+    color: white;
+}
+
+.scene-content.milestone h2 {
+    color: #85d9a0;
+}
+
+.scene-content.observation h2 {
+    color: #9bccff;
+}
+
+.scene-content.decision h2 {
+    color: #ffd766;
+}
+
+.debrief-header {
+
+    min-height: 450px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-size: cover;
+
+    background-position: center center;
+}
